@@ -71,30 +71,92 @@ nav ul{
     width: 180px;
     height: 180px;
 }
-/*popular menu*/
+/*menu style*/
 .menu-container{
-    margin: 0 140px;
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 50px;
+
 }
-.menu-item{
-    
+.image-container{
     display: grid;
-    text-align: center;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    
 }
 .menu-image{
    background-color: #f1f1f1;
-
+   text-align: center;
+   padding: 30px;
+   border-radius: 15px 15px 0 0;
+   
    
 }
-
-/*review*/
-.review-container{
-    align-items: end;
+.menu-item{
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #e6e6e6;
    
 }
+.menu-icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+/*review style*/
 
-
-.review-item{
+.down-image{
+    position: relative;
+    top: -34px;
+    display: flex;
+}
+.second-img{
+       position: relative;
+       left: -25px;
+}
+/*review right side style*/
+.customer-container{
+    display: flex;
+    margin-left: 100px;
+    overflow-x: hidden;
+    align-items: center;
+}
+.review-main{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.review-area-container{
+    background-color: #f1f1f1;
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 500px;
+}
+.review-area{
+    display: flex;
+}
+.review-area>div{
+    margin-left: 20px;
+}
+/*discoun style*/
+.member-discount{
+    background-image: url(../images/discount.png);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 24px 140px;
+    border-radius: 10px;
+}
+/*footer style*/
+.background-img{
+    background-image: url(../images/bg-image.png);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 100px 140px;
+    padding-bottom: 50px;
 }
